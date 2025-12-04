@@ -1,4 +1,6 @@
-from bottle import Solution
+from importlib import import_module
+solution_module = import_module("0011_container_with_most_water")
+Solution = solution_module.Solution
 
 
 def test_area():
